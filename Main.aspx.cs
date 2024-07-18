@@ -13,5 +13,29 @@ namespace WebWeb
         {
 
         }
+
+        protected void Unnamed1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Create_Keys.aspx");
+        }
+
+        protected void Unnamed2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Generate_Key.aspx");
+        }
+
+        protected void Unnamed3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Complete_Keys.aspx");
+        }
+
+        protected void Unnamed4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Amount_Keys.aspx");
+        }
+        protected void Unnamed5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("SeeKeys.aspx");
+        }
     }
 }

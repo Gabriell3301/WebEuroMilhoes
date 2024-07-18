@@ -1,0 +1,51 @@
+﻿body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex; /* Permite a centralização vertical e horizontal */
+    justify-content: center; /* Alinha horizontalmente no centro */
+    align-items: center; /* Adiciona centralização vertical */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#Text_Top {
+    position: absolute;
+    background-color: black;
+    font-size: 40px;
+    color: white;
+    top: 0%;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+.button {
+    transition: all 0.5s;
+    background-color: grey;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px; /* set font size to 20px */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 10px; /* add padding to ensure text doesn't overflow */
+    margin: 10px;
+}
+
+    .button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+.label{
+    border:2px solid #ccc;
+    border-color:grey;
+    border-radius:5px;
+    color:black;
+}

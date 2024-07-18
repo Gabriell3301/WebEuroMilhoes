@@ -1,0 +1,82 @@
+﻿.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Estilizar os botões */
+.button {
+    transition: all 0.5s;
+    background-color: blue;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px; /* set font size to 19px */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 20px 0px; /* add padding to ensure text doesn't overflow */
+    margin: 10px;
+}
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Posicionar os botões */
+.top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    margin-left: 12px;
+    width: 120px; /* added width property */
+}
+
+.top-right {
+    position: absolute;
+    top: 0px;
+    right: -1px;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 120px; /* added width property */
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: -3px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 120px; /* added width property */
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 120px; /* added width property */
+    
+}
+
+.center {
+    position: absolute;
+    width: 100px;
+    top: 105px;
+    left: 91px;
+}
+
+.input {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+}
