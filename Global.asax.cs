@@ -11,6 +11,7 @@ namespace WebWeb
     public class Global : System.Web.HttpApplication
     {
         internal static List<Results> results = new List<Results>();
+
         /// <summary>
         /// Start Web
         /// </summary>

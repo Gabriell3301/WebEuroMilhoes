@@ -42,7 +42,6 @@ namespace WebWeb
                         key.NumberKey = a;
                     }
                     while (validation.RepeatedKeysValidation(allKeys, key));
-                    allKeys.Add(key);
                     generatedKeys.Add(key);
                     a++;
                 }
@@ -67,7 +66,6 @@ namespace WebWeb
                 Label keyLabel = new Label();
                 keyLabel.CssClass = "key";
                 keyLabel.Text = $"Number Key: {key.NumberKey} Stars: {string.Join(",", key.Stars)} Numbers: {string.Join(",", key.Numbers)}<br />";
-
                 placeHolderKeys.Controls.Add(keyLabel);
             }
 

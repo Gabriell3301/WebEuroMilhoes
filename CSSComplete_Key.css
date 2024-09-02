@@ -21,6 +21,12 @@
     font-size: 14px;
 }
 
+.error-field {
+    border: 1px solid red;
+    background-color: #fdd;
+    box-shadow: 0 0 5px red;
+}
+
 .button {
     padding: 10px 20px;
     background-color: grey;

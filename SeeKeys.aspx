@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="Images/Logo.png" rel="icon" type="image/png" />
     <title>See Keys</title>
     <link href="CSSSee_Keys.css" rel="stylesheet" />
 </head>

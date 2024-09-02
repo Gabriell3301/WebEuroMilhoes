@@ -12,46 +12,76 @@ namespace WebWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            txtNumber1.CssClass = "input-field";
+            txtNumber2.CssClass = "input-field";
+            txtNumber3.CssClass = "input-field";
+            txtNumber4.CssClass = "input-field";
+            txtNumber5.CssClass = "input-field";
+            Label.Text = "";
+            Label.Visible = false;
+            Label.ForeColor = System.Drawing.Color.White;
+            result.Visible = false;
         }
         protected void GenerateKey(object sender, EventArgs e)
         {
             RandoMizer rand = new RandoMizer();
             List<int> numbers = new List<int>();
             List<int> stars = new List<int>();
+            bool error = false;
 
-            // Collect user input
-            CollectUserInput(txtNumber1, numbers);
-            CollectUserInput(txtNumber2, numbers);
-            CollectUserInput(txtNumber3, numbers);
-            CollectUserInput(txtNumber4, numbers);
-            CollectUserInput(txtNumber5, numbers);
-
-            // Complete with random numbers if necessary
-            rand.CompleteWithRandomNumbers(numbers, 5);
-            rand.CompleteWithRandomStars(stars, 2);
-            Validation validation = new Validation();
-            Results key = rand.CreateUserKey(numbers, stars);
-            if (!validation.RepeatedKeysValidation(Global.results, key))
+            try
             {
-                Global.results.Add(key);
-                bool Sucsses = DataBase.SaveLastResultInDataBase();
-                DataBase.MenssageSave(Label, Sucsses, null);
-            }
-            else
-            {
-                DataBase.MenssageSave(Label, false, null);
-            }
+                // Collect user input numbers
+                CollectUserInput(txtNumber1, numbers, ref error);
+                CollectUserInput(txtNumber2, numbers, ref error);
+                CollectUserInput(txtNumber3, numbers, ref error);
+                CollectUserInput(txtNumber4, numbers, ref error);
+                CollectUserInput(txtNumber5, numbers, ref error);
 
-            // Display the result
-            DisplayResult(numbers, stars);
+                if (error)
+                {
+                    throw new Exception();
+                }
+
+                // Complete with random numbers if necessary
+                rand.CompleteWithRandomNumbers(numbers, 5);
+                rand.CompleteWithRandomStars(stars, 2);
+                Validation validation = new Validation();
+                Results key = rand.CreateUserKey(numbers, stars);
+                if (!validation.RepeatedKeysValidation(Global.results, key))
+                {
+                    Global.results.Add(key);
+                    bool Sucsses = DataBase.SaveLastResultInDataBase();
+                    DataBase.MenssageSave(Label, Sucsses, null);
+                }
+                else
+                {
+                    DataBase.MenssageSave(Label, false, null);
+                }
+                // Display the result
+                DisplayResult(numbers, stars);
+            }
+            catch (Exception)
+            {
+                Label.Text = "Write a diferrent number or write a number beetwen (1-50)";
+                Label.Visible = true;
+                Label.ForeColor = System.Drawing.Color.Red;
+            }
         }
 
-        private void CollectUserInput(TextBox textBox, List<int> list)
+        private void CollectUserInput(TextBox textBox, List<int> list, ref bool error)
         {
             if (int.TryParse(textBox.Text, out int value))
             {
-                list.Add(value);
+                if (list.Contains(value) || value < 1 || value > 50)
+                {
+                    textBox.CssClass += " error-field";
+                    error = true;
+                }
+                else
+                {
+                    list.Add(value);
+                }
             }
         }
 

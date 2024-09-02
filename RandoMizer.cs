@@ -46,6 +46,7 @@ namespace EuroMilhoesC_
         {
             return random.Next(10000, 10000000);
         }
+
         /// <summary>
         /// Generate a Random results with random numbers
         /// </summary>
@@ -64,6 +65,7 @@ namespace EuroMilhoesC_
             key.Gain = GenerateGain(); 
             return key;
         }
+
         /// <summary>
         /// Create a object Results from input User
         /// </summary>
