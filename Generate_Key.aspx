@@ -10,8 +10,8 @@
     <link href="CSSGenerate_Key.css" rel="stylesheet" />
 </head>
 <body>
-    <header id="Text_Top">Generate Keys</header>
-    <form id="form1" runat="server">
+    <header ID="Text_Top">Generate Keys</header>
+    <form ID="form1" runat="server">
         <div class="container">
             <asp:Label ID="Label_Error1" Text="" runat="server" Visible="false"/>
             <asp:Label ID="Label_Key" Text="Your Key Where" runat="server" CssClass="label" Visible="false"/>

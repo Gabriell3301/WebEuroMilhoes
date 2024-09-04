@@ -132,7 +132,7 @@
     <Content Include="Create_Keys.aspx" />
     <Content Include="CSSAmount_Keys.css" />
     <Content Include="CSSComplete_Key.css" />
-    <Content Include="CSSFormation.css" />
+    <Content Include="CSSMain.css" />
     <Content Include="CSSGenerate_Key.css" />
     <Content Include="CSSHome.css" />
     <Content Include="CSSSee_Keys.css" />

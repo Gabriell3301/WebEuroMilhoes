@@ -10,8 +10,8 @@
     <link href="CSSSee_Keys.css" rel="stylesheet" />
 </head>
 <body>
-    <header id="Text_Top">See Keys</header>
-    <form id="form1" runat="server">
+    <header ID="Text_Top">See Keys</header>
+    <form ID="form1" runat="server">
     <div class="container">
         <asp:Label ID="Label_Error" Text="" runat="server" CssClass="Label_Error"/>
         <div class="placeholder">

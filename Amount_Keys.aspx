@@ -10,13 +10,13 @@
     <link href="CSSAmount_Keys.css" rel="stylesheet" />
 </head>
 <body>
-    <header id="Text_Top">Amount Keys</header>
-    <form id="form1" runat="server">
+    <header ID="Text_Top">Amount Keys</header>
+    <form ID="form1" runat="server">
         <div class="container">
         <div class="placeholder">
             <div class="pair">
                 <label for="NumberOfKeys">Number of Keys:</label>
-                <asp:TextBox ID="NumberOfKeys" runat="server" TextMode="Number" CssClass="input"/>
+                <label ID="NumberOfKeys" runat="server" TextMode="Number" CssClass="input"/>
             </div>
             <div class="pair">
                 <asp:Button ID="Generate_Keys" runat="server" Text="Generate Keys" OnClick="GenerateKeys" CssClass="button"/>

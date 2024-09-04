@@ -15,15 +15,6 @@ namespace WebWeb
     {
 
         /// <summary>
-        /// Controle Text_Top.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Text_Top;
-
-        /// <summary>
         /// Controle form1.
         /// </summary>
         /// <remarks>
@@ -121,14 +112,5 @@ namespace WebWeb
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl result;
-
-        /// <summary>
-        /// Controle btnEnviar.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEnviar;
     }
 }
