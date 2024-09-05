@@ -10,22 +10,22 @@
     <link href="CSSAmount_Keys.css" rel="stylesheet" />
 </head>
 <body>
-    <header ID="Text_Top">Amount Keys</header>
-    <form ID="form1" runat="server">
+    <header id="Text_Top">Amount Keys</header>
+    <form id="form1" runat="server">
         <div class="container">
         <div class="placeholder">
             <div class="pair">
                 <label for="NumberOfKeys">Number of Keys:</label>
-                <label ID="NumberOfKeys" runat="server" TextMode="Number" CssClass="input"/>
+                <asp:Textbox id="NumberOfKeys" runat="server" TextMode="Number" CssClass="input"/>
             </div>
             <div class="pair">
-                <asp:Button ID="Generate_Keys" runat="server" Text="Generate Keys" OnClick="GenerateKeys" CssClass="button"/>
-                <asp:Button ID="Save" Text="Save Keys" runat="server" OnClick="SaveKeys" CssClass="button"/>
+                <asp:Button id="Generate_Keys" runat="server" Text="Generate Keys" OnClick="GenerateKeys" CssClass="button"/>
+                <asp:Button id="Save" Text="Save Keys" runat="server" OnClick="SaveKeys" CssClass="button"/>
             </div>
             <div class="keys-container">
-                <asp:PlaceHolder ID="placeHolderKeys" runat="server"></asp:PlaceHolder>
+                <asp:PlaceHolder id="placeHolderKeys" runat="server"></asp:PlaceHolder>
             </div>
-            <asp:Label ID="Label_Error" runat="server" Text="" Visible="false" CssClass="Label_Error" />
+            <asp:Label id="Label_Error" runat="server" Text="" Visible="false" CssClass="Label_Error" />
         </div>
     </div>
     </form>

@@ -83,6 +83,14 @@ namespace WebWeb
                     list.Add(value);
                 }
             }
+            else
+            {
+                if (!(textBox.Text == ""))
+                {
+                        textBox.CssClass += " error-field";
+                        error = true;
+                }
+            }
         }
 
         private void DisplayResult(List<int> numbers, List<int> stars)

@@ -1,29 +1,17 @@
 ﻿body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex; /* Permite a centralização vertical e horizontal */
-    justify-content: center; /* Alinha horizontalmente no centro */
-    align-items: center; /* Adiciona centralização vertical */
+
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+.header-custom-bg{
+    background-color:black;
 }
-
-#Text_Top {
-    position: absolute;
-    background-color: black;
-    font-size: 40px;
-    color: white;
-    top: 0%;
-    width: 100%;
-    text-align: center;
-    padding: 15px;
-}
+    .header a {
+    color:inherit;
+    text-decoration:none;
+    }
+    .header a:hover{
+        color:inherit;
+    }
 
 .button {
     transition: all 0.5s;
@@ -39,13 +27,40 @@
 }
 
     .button:hover {
-        transform: translateY(-3px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        color:white;
+        transform: translateY(-3px);
     }
 
 .label{
+    font-size:15px;
     border:2px solid #ccc;
-    border-color:grey;
+    border-color:gray;
     border-radius:5px;
-    color:black;
+    color:white;
+}
+.box-container {
+    background-color: darkgrey;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+.box-title {
+    background-color: gray;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+}
+.box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100%; /* Fill available height */
 }

@@ -13,6 +13,10 @@ namespace WebWeb
         private static Results key = new Results();
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                key = new Results();
+            }
             Label_Error1.Text= string.Empty;
             Label_Error1.Visible=false;
         }
@@ -57,8 +61,7 @@ namespace WebWeb
             }
             catch (Exception a)
             {
-
-                Label_Error1.Text = $"Something went wrong<br/>Error: {a}";
+                Label_Error1.Text = $"Something went wrong<br/>Error: {"Unable to Save this key"}";
                 Label_Error1.ForeColor = System.Drawing.Color.Red;
                 Label_Error1.Visible = true;
             }

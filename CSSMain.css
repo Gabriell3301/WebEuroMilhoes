@@ -4,6 +4,9 @@
     align-items: center;
     height: 100vh;
 }
+.bg-custom{
+    background-color: black;
+}
 
 .btns {
     display: grid;

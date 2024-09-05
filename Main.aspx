@@ -15,24 +15,45 @@
 </head>
 <body>
     <!-- Header -->
-    <navbar class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
-        <div class="container d-flex justify-content-center">
-            <div class="text-white text-center">
-                <h6 class="fs-1">Euro Milhão</h6>
+    <nav class="navbar navbar-expand-none bg-custom navbar-dark py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="text-white mx-auto">
+                <h6 class="fs-1 text-center">Euro Milhão</h6>
+            </div>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navmenu"
+                    aria-expanded="true">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navmenu" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Create_Keys.aspx">See Keys</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Generate_Key.aspx">See Keys</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Complete_Keys.aspx">See Keys</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Amount_Keys.aspx">See Keys</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SeeKeys.aspx">See Keys</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </navbar>
+    </nav>
     <!-- Buttons -->
      <form id="form1" runat="server">
          <div class="d-flex justify-content-center aling-items-center vh-100">
              <section class="bg-white text-light py-4">
                <div class="btns-container">
                    <div class="btns">
-                       <asp:button text="Create Keys" class="btn btn-primary btn-lg animatedButton" runat="server" OnClick="Unnamed1_Click"/>
-                       <asp:button text="Generate Keys" class="btn btn-primary btn-lg animatedButton" runat="server" OnClick="Unnamed2_Click"/>
-                       <asp:button text="Complete Key" class="btn btn-primary btn-lg animatedButton" runat="server" OnClick="Unnamed3_Click"/>
-                       <asp:button text="Amount Keys" class="btn btn-primary btn-lg animatedButton" runat="server" OnClick="Unnamed4_Click"/>
-                       <asp:button text="See Keys" class="btn btn-primary btn-lg animatedButton" runat="server" OnClick="Unnamed5_Click"/>
+                       
                    </div>
                </div>
             </section>
