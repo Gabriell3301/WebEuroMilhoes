@@ -35,6 +35,7 @@ namespace WebWeb
             List<string> errorMessages = new List<string>();
             HashSet<int> uniqueStars = new HashSet<int>();
             HashSet<int> uniqueNumber = new HashSet<int>();
+   
             Results key = new Results();
             bool isValid = true;
             try

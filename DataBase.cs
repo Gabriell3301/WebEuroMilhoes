@@ -49,6 +49,7 @@ namespace EuroMilhoesC_
                                 var result = new Results
                                 {
                                     NumberKey = numberKey,
+                                    Date = date,
                                     Winner = winner,
                                     Gain = gain,
                                     Numbers = new List<int>(),
@@ -149,7 +150,6 @@ namespace EuroMilhoesC_
                         if (count > 0)
                         {
                             // Chave já existe, ignorar a inserção
-                            Console.WriteLine($"The key with NumberKey {Global.results.Last().NumberKey} already exists. Ignoring...");
                             return false;
                         }
                     }

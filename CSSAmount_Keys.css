@@ -1,103 +1,91 @@
-﻿body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex; /* Permite a centralização vertical e horizontal */
-    justify-content: center; /* Alinha horizontalmente no centro */
-    align-items: center; /* Adiciona centralização vertical */
-    overflow: hidden; /* Remove a barra de rolagem padrão */
+﻿.header-custom-bg {
+    background-color: black;
 }
 
-#Text_Top {
-    position: absolute;
-    background-color: black;
-    font-size: 40px;
-    color: white;
-    top: 0%;
-    width: 100%;
-    text-align: center;
-    padding: 15px;
+.header a {
+    color: inherit;
+    text-decoration: none;
 }
+
+    .header a:hover {
+        color: inherit;
+    }
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height:100%;
+    height: 100%;
+    padding-top: 80px; /* Espaço para o header fixo */
 }
 
 .placeholder {
-    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco meio escuro */
-    border: 1px solid #ccc; /* Bordas finas cinzas */
-    border-radius: 10px; /* Bordas redondas */
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para um efeito de elevação */
-    max-width: 500px; /* Largura máxima do placeholder */
-    width: 100%; /* Ocupará toda a largura disponível até o máximo definido */
-    box-sizing: border-box; /* Inclui padding e border no tamanho total */
-    max-height: 60vh; /* Limita a altura do placeholder */
-    overflow-x:hidden;
-    overflow-y: auto; /* Permite rolagem vertical */
+    cursor:default;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
 }
 
 .key {
-    margin-bottom: 10px; /* Espaço pequeno entre cada key */
+    margin-bottom: 10px;
     padding: 10px;
-    width: 100%; /* Faz o campo de entrada ocupar a largura disponível */
-    max-width: 100%; /* Ajuste conforme necessário */
-    text-align: center; /* Centraliza o texto dentro da key */
+    width: 100%;
+    text-align: center;
 }
 
 .pair {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 10px; /* Espaço entre os pares */
+    margin-bottom: 10px;
     width: 100%;
 }
 
 .label {
-    margin-bottom: 5px; /* Espaço entre o label e o input */
-    color: #333; /* Cor do texto do label */
+    margin-bottom: 5px;
+    color: black;
 }
 
 .input {
-    border: 1px solid #ccc; /* Bordas finas cinzas */
-    border-radius: 5px; /* Bordas redondas */
+    border: 1px solid #ccc;
+    border-radius: 5px;
     padding: 8px;
-    width: 100%; /* Faz o campo de entrada ocupar a largura disponível */
-    box-sizing: border-box; /* Inclui padding e border no tamanho total */
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
     font-size: 14px;
-    background-color: #fff; /* Fundo branco para o input */
 }
 
 .button {
-    transition: all 0.5s;
-    background-color: grey;
+    background-color:#000;
     color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 19px; /* Tamanho da fonte */
+    font-size: 19px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    padding: 10px 10px; /* Padding para garantir que o texto não ultrapasse os limites */
-    margin-top: 10px; /* Espaço acima do botão */
-    width: 100%; /* Ocupará toda a largura disponível */
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    transition: transform 0.5s, box-shadow 0.3s;
 }
 
     .button:hover {
+        color:white;
+        background-color:#000;
         transform: translateY(-3px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
 
 .keys-container {
-    margin-top: 20px; /* Espaço acima do container de keys */
+    margin-top: 20px;
 }
 
 .Label_Error {
     border: 2px solid red;
     color: red;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 16px;
     margin-top: 10px;
+    padding: 10px;
 }

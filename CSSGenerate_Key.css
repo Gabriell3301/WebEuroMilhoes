@@ -53,7 +53,7 @@
 .box-title {
     background-color: gray;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-size: 24px;
     color: white;
 }
@@ -62,5 +62,5 @@
     flex-direction: column;
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
-    height: 100%; /* Fill available height */
+    height: 90%; /* Fill available height */
 }
