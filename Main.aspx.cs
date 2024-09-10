@@ -103,6 +103,10 @@ namespace WebWeb
                         if (indexToRemove != -1)
                         {
                             Global.results.RemoveAt(indexToRemove);
+                            foreach (var result in Global.results.Where(x => x.NumberKey > indexToRemove))
+                            {
+                                result.NumberKey--;
+                            }
                             LastKey.Text = analyse.LastKey();
                         }
                         else

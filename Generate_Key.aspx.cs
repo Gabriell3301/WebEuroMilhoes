@@ -59,7 +59,7 @@ namespace WebWeb
                     Label_Error1.Visible = true;
                 }
             }
-            catch (Exception a)
+            catch (Exception)
             {
                 Label_Error1.Text = $"Something went wrong<br/>Error: {"Unable to Save this key"}";
                 Label_Error1.ForeColor = System.Drawing.Color.Red;

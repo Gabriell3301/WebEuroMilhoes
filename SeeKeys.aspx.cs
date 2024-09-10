@@ -21,7 +21,7 @@ namespace WebWeb
                 foreach (var key in Global.results)
                 {
                     Label keyLabel = new Label();
-                    keyLabel.CsClass = "key";
+                    keyLabel.CssClass = "key";
                     keyLabel.Text = $"Number Key: {key.NumberKey} Stars: {string.Join(",", key.Stars)} Numbers: {string.Join(",", key.Numbers)} Date: {key.Date}<br />";
                     placeHolderKeys.Controls.Add(keyLabel);
                 }
@@ -94,6 +94,19 @@ namespace WebWeb
                 };
 
                 placeHolderKeys.Controls.Add(keyLabel);
+            }
+            if (BuscarKey.Text == "")
+            {
+                foreach (var key in Global.results)
+                {
+                    Label keyLabel = new Label
+                    {
+                        CssClass = "key",
+                        Text = $"Number Key: {key.NumberKey} Stars: {string.Join(", ", key.Stars)} Numbers: {string.Join(", ", key.Numbers)} Date: {key.Date}<br />"
+                    };
+
+                    placeHolderKeys.Controls.Add(keyLabel);
+                }
             }
         }
         protected void sortByDate(string direction)

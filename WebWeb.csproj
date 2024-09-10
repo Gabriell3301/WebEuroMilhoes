@@ -140,6 +140,7 @@
     <Content Include="Global.asax" />
     <Content Include="Main.aspx" />
     <Content Include="CSSCreate_Keys.css" />
+    <Content Include="ScriptSeeKeys.js" />
     <Content Include="SeeKeys.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
